@@ -1,20 +1,16 @@
-var gith = require('gith').create(8010);
+var webhooks = require('github-webhooks');
 var shell = require('shelljs');
 
+var PORT = 8010
 
-gith({
-	repo: 'Bearcat-Hackers/RevolutionUC-Website'
-}).on('all', function(paylod) {
-	if(paylod.branch === 'master') {
+webhooks.on('push', function(payload) {
 		console.log('about to deploy!');
-		deploy();
-	}
-})
 
-function deploy() {
-	shell.cd('/home/curtis/RevolutionUC-F2014/RevolutionUC-Website/');
-	shell.exec('git pull https://github.com/Bearcat-Hackers/RevolutionUC-Website.git');
-	shell.exec('grunt build');
+		shell.cd('/home/curtis/RevolutionUC-F2014/RevolutionUC-Website/');
+		shell.exec('git pull https://github.com/Bearcat-Hackers/RevolutionUC-Website.git');
+		shell.exec('grunt build');
 
-	console.log('done building!')
-}
+		console.log('done building!');
+});
+
+console.log("Running on port: " + PORT);

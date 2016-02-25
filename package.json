@@ -14,19 +14,10 @@
   "bugs": {
     "url": "https://github.com/Bearcat-Hackers/site-deployemnt/issues"
   },
-  "main": "src/scss/main.scss",
+  "main": "app.js",
   "scripts": {},
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-concat": "^0.5.0",
-    "grunt-contrib-copy": "^0.7.0",
-    "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-bower-task": "^0.4.0",
-    "barkeep": "^0.3.0"
-  },
   "dependencies": {
-    "gith": "^1.0.4",
+    "github-webhooks": "^0.1.21",
     "shelljs": "^0.5.1"
   }
 }
