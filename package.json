@@ -1,5 +1,5 @@
 {
-  "name": "RevolutionUC-site-deploy",
+  "name": "site-deployment",
   "version": "1.0.0",
   "description": "Deploy RevolutionUC Site",
   "engine": {
