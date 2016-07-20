@@ -1,9 +1,10 @@
 {
   "name": "RevolutionUC-site-deploy",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Deploy RevolutionUC Site",
-  "keywords": [],
-  "private": true,
+  "engine": {
+    "node": ">=0.12.0"
+  },
   "author": "Chris Crowell",
   "license": "MIT",
   "homepage": "https://github.com/Bearcat-Hackers/site-deployemnt",
@@ -17,7 +18,8 @@
   "main": "app.js",
   "scripts": {},
   "dependencies": {
-    "github-webhooks": "^0.1.21",
-    "shelljs": "^0.5.1"
+    "githubhook": "^1.6.1",
+    "shelljs": "^0.5.3",
+    "winston": "^2.2.0"
   }
 }
