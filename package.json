@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Deploy RevolutionUC Site",
   "private": true,
-  "engine": {
-    "node": ">=0.12.0"
+  "engines": {
+    "node": ">=4.x"
   },
   "author": "Chris Crowell",
   "contributors": [
@@ -29,8 +29,9 @@
   "main": "app.js",
   "scripts": {},
   "dependencies": {
+    "dotenv": "^2.0.0",
     "githubhook": "^1.6.1",
-    "shelljs": "^0.5.3",
+    "shelljs": "^0.7.1",
     "winston": "^2.2.0"
   }
 }
