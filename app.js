@@ -44,11 +44,6 @@ function deploy(deliveryId) {
     shell.cd(process.env.SITE_PATH);
     shell.exec('git fetch --all');
     shell.exec('git reset --hard origin/master');
-    shell.exec('npm install');
-    shell.exec('npm prune --production');
-    shell.exec('bower install --allow-root --force');
-    shell.exec('bower prune --allow-root --force');
-    shell.exec('grunt build');
 
     logger.info('Deployed! (delivery id: %s)', deliveryId);
 };
